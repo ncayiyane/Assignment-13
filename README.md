@@ -81,6 +81,10 @@ The CI pipeline (`test` job) runs automatically on:
    - This status check is required to pass before PRs can be merged
    - Provides immediate feedback on test failures in the PR interface
 
+![CI Test Results Screenshot](./ci-test-results-screenshot.png)
+
+*Screenshot: GitHub Actions showing successful test execution.*
+
 ### CD Pipeline (Release Artifact)
 
 The CD pipeline (`build-and-deploy` job) runs automatically when code is merged to the main branch.
@@ -128,9 +132,15 @@ The CD pipeline (`build-and-deploy` job) runs automatically when code is merged 
    - Makes artifacts available for download from the GitHub Actions interface
    - Artifacts are retained for 90 days by default
 
+![CD Artifact Screenshot](./cd-artifact-screenshot.png)
+
+*Screenshot: GitHub Actions showing the generated Python package artifacts.*
+
 ## Branch Protection Technical Implementation
 
 The main branch is protected with the following rules configured in the repository settings:
+
+![Branch Protection Rules Screenshot](./branch-protection-screenshot.png)
 
 ### Required Status Checks
 
